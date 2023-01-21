@@ -35,9 +35,8 @@ if matches == 1:
 if matches == 2:
     print("2 instances of " + character + " found in " + word)
 if matches == 3:
-     print("3 instances of " + character + " found in " + word)
+    print("3 instances of " + character + " found in " + word)
 if matches == 4:
-     print("4 instances of " + character + " found in " + word)
+    print("4 instances of " + character + " found in " + word)
 if matches == 5:
-     print("5 instances of " + character + " found in " + word)
-
+    print("5 instances of " + character + " found in " + word)

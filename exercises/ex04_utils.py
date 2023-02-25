@@ -10,8 +10,8 @@ def all(input: list[int], integer: int) -> bool:
         if integer == input[i]:
             i += 1
         else:
-            if input == list():
-                return False
+            return False
+        if input == list():
             return False
     return True
 
@@ -21,12 +21,11 @@ def max(input: list[int]) -> int:
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
     i: int = 0
-    idx: int = 1
     max: int = input[i]
+    counter: int = 1
     while i < len(input):
-        if input[idx] > max:
-            max == input[idx]
-            idx += 1
+        if input[counter] > max:
+            max == input[counter]
         i += 1
     return max
 

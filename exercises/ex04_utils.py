@@ -21,12 +21,11 @@ def max(input: list[int]) -> int:
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
     i: int = 0
-    idx: int = 0
-    max: int = 0
+    idx: int = 1
+    max: int = input[i]
     while i < len(input):
-        if input[i] >= input[idx]:
-            max == input[i]
-        else:
+        if input[idx] > max:
+            max == input[idx]
             idx += 1
         i += 1
     return max

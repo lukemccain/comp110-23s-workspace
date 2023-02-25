@@ -49,4 +49,3 @@ def is_equal(list_of_int: list[int], second_list_of_int: list[int]) -> bool:
 int_list_for_is_equal: list[int] = [1,0,1]
 second_list_of_int_for_is_equal: list[int] = [1,0,1]
 print(is_equal(int_list_for_is_equal, second_list_of_int_for_is_equal))
-

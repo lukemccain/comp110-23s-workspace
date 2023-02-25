@@ -44,4 +44,6 @@ def is_equal(list_of_int: list[int], second_list_of_int: list[int]) -> bool:
         return False
     if list_of_int == list() or second_list_of_int == list():
         return False
+    if list_of_int == list() and second_list_of_int == list():
+        return False
     return True

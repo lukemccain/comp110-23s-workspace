@@ -11,8 +11,8 @@ def all(input: list[int], integer: int) -> bool:
             i += 1
         else:
             return False
-        if input == []:
-            return False
+    if input == []:
+        return False
     return True
 
 
@@ -32,15 +32,15 @@ def max(input: list[int]) -> int:
 def is_equal(list_of_int: list[int], second_list_of_int: list[int]) -> bool:
     """Testing if every int at every index is equal to eachother."""
     i: int = 0
+    if len(list_of_int) != len(second_list_of_int):
+        return False
+    if list_of_int == [] and second_list_of_int == []:
+        return True
+    if list_of_int == [] or second_list_of_int == []:
+        return False
     while i < len(list_of_int) and i < len(second_list_of_int):
         if list_of_int[i] == second_list_of_int[i]:
             i += 1
         else:
             return False
-    if len(list_of_int) != len(second_list_of_int):
-        return False
-    if list_of_int == [] or second_list_of_int == []:
-        return False
-    if list_of_int == [] and second_list_of_int == []:
-        return False
     return True

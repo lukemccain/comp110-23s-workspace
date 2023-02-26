@@ -11,7 +11,7 @@ def all(input: list[int], integer: int) -> bool:
             i += 1
         else:
             return False
-        if input == list():
+        if input == []:
             return False
     return True
 
@@ -39,8 +39,8 @@ def is_equal(list_of_int: list[int], second_list_of_int: list[int]) -> bool:
             return False
     if len(list_of_int) != len(second_list_of_int):
         return False
-    if list_of_int == list() or second_list_of_int == list():
+    if list_of_int == [] or second_list_of_int == []:
         return False
-    if list_of_int == list() and second_list_of_int == list():
+    if list_of_int == [] and second_list_of_int == []:
         return False
     return True

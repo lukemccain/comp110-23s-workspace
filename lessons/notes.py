@@ -1,6 +1,6 @@
-x: int = 3//2
+x: int = 1
 
-if x == 1.0:
-    print("YES")
-else:
-    print("NO")
+def f(y: int) -> int:
+    return x + y
+
+print(f(x+1))

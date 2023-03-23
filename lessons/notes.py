@@ -1,6 +1,4 @@
-x: int = 1
+my_l: list[str] = ["unicycle", "bicycle", "helicopter", "scooter"]
 
-def f(y: int) -> int:
-    return x + y
-
-print(f(x+1))
+for x in my_l:
+    print(x)
